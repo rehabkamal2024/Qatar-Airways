@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Qatar Airways</title>
+    <!-- Responsive for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <header> <!-- header -->
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light  fixed-top " style="  height: 80px;opacity: 0.6;">
+        <div class="container-fluid ">
+          <input type="image" src="images/logo11.png"  alt="logo11" height="65px"
+            width="150px">
+          <a class="navbar-brand text-dark m-3" href="#"
+            style="border-right:1px solid #ccc; padding-right: 10px; font-weight: bold;"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle text-dark border-2 border-dark rounded-3" href="#"
+                  id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trips
+                </button>
+                <ul class="dropdown-menu mt-3  fade " aria-labelledby="nav-Dropdown">
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">DOHA</a></li>
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">KSA </a></li>
+                  <li>
+                    <hr class="dropdown-divider bg-info">
+                  </li>
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">ISTAMBOL</a></li>
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">BAHRAN</a></li>
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">SHARKA</a></li>
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">Kuwait</a></li>
+                  <li><a class="dropdown-item text-shadow" target="_blank" href="">MORE ...</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-dark"href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control m-3 border-3 border-dark rounded-3" type="search" placeholder="Search"
+                aria-label="Search">
+
+            </form>
+            <form class="d-flex">
+              <button class=" navbtn btn bg-dark text-white me-3 border-3 border-dark rounded-3 shadow-lg"
+                type="submit">Search</button>
+              <button class="navbtn btn bg-dark text-white border-3 border-dark rounded-3 shadow-lg" type="button"
+                data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+            </form> <!-- /form -->
+          </div> <!-- /navbar-collapse -->
+
+        </div>
+      </nav>
+      <!-- /navbar -->
+    </header> <!-- /header -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark ">
+            <h5 class="modal-title text-light shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+            <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- form -->
+            <form>
+              <div class="m-3">
+                <label class="form-label text-dark">Email address</label>
+                <input type="email" class="form-control text-dark border-3 border-dark rounded-2"
+                  aria-describedby="emailHelp">
+                <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+              </div>
+              <div class="m-3">
+                <label class="form-label text-dark">Password</label>
+                <input type="password" class="form-control text-dark border-3 border-dark rounded-2">
+              </div>
+              <div class="m-3 form-check">
+                <div class="form-check form-switch">
+                  <input class="form-check-input bg-secondary" type="checkbox" role="switch" checked>
+                  <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember me</label>
+                </div>
+              </div> <!-- /form check -->
+
+            </form>
+            <!-- /form -->
+            <div class="modal-footer d-flex  justify-content-between">
+              <button type="submit" class="btn btn-dark text-light">Login</button>
+              <button type="button" class="btn btn-dark text-light" data-bs-dismiss="modal">Close</button>
+            </div> <!-- /model-footer -->
+          </div> <!-- /model-body -->
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
+
+    </main>
+    <aside>
+      <div class="container-fluid p-0 " style="position: relative;">
+
+        <div class="d-flex flex-column justify-content-between ms-auto"
+          style="position: fixed;z-index: 90;top: 200px;right:20px;">
+          <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-linkedin"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square"></i></a></div>
+        </div>
+    </aside>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/h3-a350-1000-doha2 (2).jpg" alt="qatar1" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>QATAR</h1>
+            <p>We had such a great time in Qatar!</p>
+            <a href="#" class="btn  text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="images/h2-experience-qatar-family (2).jpg" alt="qatqr2" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>SOUQ WAKEF</h1>
+            <p>Welcome Welcome in SOUQ WAKEF</p>
+            <a href="#" class="btn  text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/rendition.733.425.jpg" alt="doha1" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>DOHA</h1>
+            <p>We love this city DOHA</p>
+            <a href="#" class="btn  text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/h2-doha-corniche (1).jpg" alt="corniche" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>EL CORNICHE</h1>
+            <p>Watch the dhows lighting up the Corniche in the evenings</p>
+            <a href="#" class="btn  text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /carousel -->
+    </main>
+    <!-- basic card -->
+    <section class="cards">
+
+      <div class="card p-3  text-dark shadow-lg"
+        style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(231, 227, 227);">
+        <div class="card-body">
+          <h2 class="card-title title">Discover Qatar's treasures</h2>
+          <p class="card-text">Whether you are staying for one night on a stopover, spending time on a family holiday, or seeking out new adventures,
+             now is the perfect time to plan your next holiday and discover an authentic Arabian treasure in the heart of the Gulf.          </p>
+          <a href="#" class="btn btn-secandry text-dark  btn-lg m-auto">Learn more</a>
+        </div>
+      </div>
+      <!-- /card -->
+      <hr>
+      <!-- collapse Accordion-->
+      <div class="mx-auto my-3 p-5  text-light text-center text-shadow rounded-3 shadow-lg "
+        style="background-color: #777373;">
+        <h1>Popular destinations in Doha</h1>
+      </div>
+      <div class="accordion" id="accordioncollapse">
+        <div class="accordion-item">
+          <h2 class="accordion-header " id="head1">
+            <button class="accordion-button collapsed btn-outline-info text-info title shadow-lg " type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+              style="font-size: 20px;">
+              Katara Cultural Village
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="head1"
+            data-bs-parent="#accordioncollapse">
+            <div class="accordion-body border-info text-secondary">
+              Combining art galleries and workshops, theatres and performances venues, and exceptional restaurants choices
+              , Katara Cultural Village is Doha is destination for culture and entertainment.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head2">
+            <button class="accordion-button collapsed btn-outline-info text-info title shadow-lg " type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Souq Waqif
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="head2"
+            data-bs-parent="#accordioncollapse">
+            <div class="accordion-body border-info text-secondary">
+              Built on the site of Doha’s century old trading market, the Souq Waqif market harkens to a bygone era while remaining a hub of activity,
+               where commerce and gossip collide. Souq Waqif’s winding alleys offer a tableau of traditional street life.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="head3">
+              <button class="accordion-button collapsed btn-outline-info text-info  shadow-lg title" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                Museum of Islamic Art & National Museum of Qatar
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="head3"
+              data-bs-parent="#accordioncollapse">
+              <div class="accordion-body border-info text-secondary">
+                The Museum of Islamic Art contains four floors of permanent and temporary exhibitions, gift shop,
+                 a café and a haute cuisine restaurant IDAM by renowned chef Alain Ducasse 
+                </div>
+            </div>
+          </div>
+
+          <!-- /collapse -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+            style="background-color: #777373;">
+            <h1>Translate From Arabic To English</h1>
+          </div>
+          <!-- card1 -->
+          <div class="card p-3  text-secondary shadow-lg"
+            style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(231, 227, 227);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en"
+                  target="_blank" rel="noopener">Press Here</a></h4>
+              <button
+                class="btn btn-outline-dark text-dark border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg "
+                onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 18px;background-color: rgb(139, 135, 135);">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+                name="text"></textarea>
+            </div>
+          </div>
+          <!-- /card1 -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+            style="background-color: #777373;">
+            <h1>Translate From Arabic To Frensh</h1>
+          </div>
+          <!-- card2 -->
+          <div class="card p-3  text-secondary shadow-lg"
+            style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(231, 227, 227);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a
+                  href="https://translate.google.com.eg/?hl=en&sl=ar&tl=fr&op=translate" target="_blank"
+                  rel="noopener">Press Here</a></h4>
+              <button
+                class="btn btn-light text-dark border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg"
+                onclick="copyToClipboard('sentence')" id="btncopy" style="font-size: 18px;background-color: rgb(139, 135, 135);">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+                name="text"></textarea>
+            </div>
+          </div>
+          <!-- /card2 -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+            style="background-color: #777373;">
+            <h1>Translate From Arabic To German</h1>
+          </div>
+          <!-- card3 -->
+          <div class="card p-3  text-secondary shadow-lg"
+            style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color:  rgb(231, 227, 227);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a
+                  href="https://translate.google.com.eg/?hl=en&sl=ar&tl=de&op=translate" target="_blank"
+                  rel="noopener">Press Here</a></h4>
+              <button
+                class="btn btn-light text-dark border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg"
+                onclick="copyToClipboard('sentence')" id="btncopy" style="font-size: 18px;background-color: rgb(139, 135, 135);">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+                name="text"></textarea>
+            </div>
+          </div>
+          <!-- /card3 -->
+
+    </section> <!-- /cards -->
+    <hr class="my-4">
+    <div class="fixed-img fixed-image1"></div>
+    <!-- tours -->
+    <section class="tours">
+      <div class="mx-auto mb-3 p-3  text-light text-center text-shadow rounded-3 shadow-lg "
+        style="background-color: rgb(139, 135, 135);">
+        <h1 class="title" style="font-size: 40px;">Popular destinations in QATAR</h1>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-around pb-5 ">
+          <!-- cairo card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/h2-doha.jpg" class="card-img-top shadow w-100" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">DOHA</h5>
+              <p class="card-text">Capital of QATAR</p>
+              <button class="btn btn-secondary text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /cairo card -->
+          <!-- Alex card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/h2-katara-cultural-village.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Katara Cultural Village</h5>
+              <p class="card-text">A central amphitheatre stands  </p>
+              <button class="btn btn-secondary  text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /Alex card -->
+          <!-- Luxor card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/h2-doha-corniche.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">The Corniche</h5>
+              <p class="card-text">Watch the dhows lighting up </p>
+              <button class="btn btn-secondary  text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /Luxor card -->
+          <!-- Aswan card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/Quest theme park.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Quest theme park </h5>
+              <p class="card-text">Quest is Qatar’s first-ever theme park in Doha Oasis;</p>
+              <button class="btn btn-secondary text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /Aswan card -->
+          <!-- The New Administrative Capital  card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/Museums1.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Museums</h5>
+              <p class="card-text">The Museum of Illusions at The Gate Mall</p>
+              <button class="btn btn-secondary text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /cairo card -->
+          <!-- sharm card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/Entertainment centres.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Entertainment centres</h5>
+              <p class="card-text">Numerous malls are home to indoor 
+                amusement parks including Angry Birds World</p>
+              <button class="btn btn-secondary text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /sharm card -->
+          <!-- siwa card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/Camp in the desert.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Camp in the desert</h5>
+              <p class="card-text"> A favourite Qatari pastime, 
+                visitors can enjoy daytime, evening</p>
+              <button class="btn btn-secondary text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /siwa card -->
+          <!-- Hurghada card -->
+          <div class="card cardover bg-light text-secondary col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="images/Explore Qatar's vibrant restaurant scene.jpg" class="card-img-top shadow"
+              alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Explore Qatar's vibrant restaurant scene</h5>
+              <p class="card-text">Qatar's cuisine represents Arabia and the Middle East</p>
+              <button class="btn btn-secondary text-dark mx-auto d-block">Know More</button>
+            </div>
+          </div>
+        </div> <!-- /row cards -->
+      </div> <!-- /container -->
+    </section>
+
+    <div class="fixed-img fixed-image2"></div>
+    <hr class="my-4">
+    <!----------------- thanks card------------------>
+    <div class="card p-3  text-white shadow-lg" style="background-color: rgb(139, 135, 135);">
+      <h2 class="text-center text-light m-3 title" style="font-size: 40px;">Thanks For</h2>
+    </div>
+
+    <section class="wrapper">
+      <div class="container" style="width: 100%; min-height: 500px;">
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-hover text-white card-has-bg click-col thankcard"
+              style="background-image:url('images/thankscart1.jpg');">
+              <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+                alt="All thanks and appreciation" alt="All thanks and appreciation">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                  <small><i class="far fa-clock"></i> May 22, 2024</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle" src="images/thankscart1.jpg" alt="Generic placeholder image"
+                      style="width:100px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Qatar Airways Group Chief Executive</h6>
+                      <small>Manager of Qatar Airways </small>
+                    </div>
+                  </div>
+                </div> <!-- card-footer
+          </div> <card-img-overlay -->
+              </div> <!-- /card -->
+            </div> <!-- /card3 -->
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-hover text-white card-has-bg click-col thankcard"
+              style="background-image:url('images/v-qsuite-crew-welcome.jpg');">
+              <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+                alt="All thanks and appreciation" alt="All thanks and appreciation">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                  <small><i class="far fa-clock"></i> May 22, 2024</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle" src="images/v-qsuite-crew-welcome.jpg" alt="Generic placeholder image"
+                      style="width:100px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">EL-shetha Marim</h6>
+                      <small>Supervisor of Qatar Trips</small>
+                    </div>
+                  </div>
+                </div> <!-- card-footer -->
+              </div> <!-- /card-img-overlay -->
+            </div> <!-- /card -->
+          </div> <!-- /card3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4 card3">
+            <div class="card card-hover text-white card-has-bg click-col thankcard"
+              style="background-image:url('images/cart3.jpg');">
+              <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+                alt="All thanks and appreciation" alt="All thanks and appreciation">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                  <small><i class="far fa-clock"></i> May 22, 2024</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle" src="images/cart3.jpg" alt="Generic placeholder image"
+                      style="width:100px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Qatar Airways Group</h6>
+                      <small>Qatar Airways Group</small>
+                    </div>
+                  </div>
+                </div> <!-- card-footer -->
+              </div> <!-- /card-img-overlay -->
+            </div> <!-- /card -->
+          </div> <!-- /card3 -->
+
+        </div> <!-- /row -->
+
+      </div>
+    </section>
+
+    <!--thanks card -->
+
+    <hr class="my-4">
+    <section class="container light"> <!-- postcards news -->
+      <div class="container py-2">
+        <div class="h1 text-center  title" id="pageHeaderTitle" style="font-size: 30px;">Qatar Airways</div>
+
+        <article class="postcard d-flex light blue"> <!-- 1st card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/s-f1-v2.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title blue"><a href="#">Qatar Executive Welcomes the World’s First Gulfstream G700 Aircraft to Doha</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>thu, May 22th 2024
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Qatar Executive (QE), the corporate jet subsidiary of Qatar Airways Group, 
+              has officially welcomed the delivery of two new Gulfstream G700 aircraft to the fleet, 
+              becoming the worldwide exclusive commercial operator of the aircraft.
+              Qatar Executive is the first carrier to offer the Gulfstream G700 to charter customers, 
+              continuing to provide an ultra-modern fleet with the ultimate in aircraft capabilities, 
+              luxury and performance.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>70 mins.</li>
+              <li class="tag__item play blue">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Video</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /1st card -->
+        <article class="postcard d-flex light red"> <!-- 2nd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/s-qsuite-ife-dine.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title red"><a href="#">About Qatar Airways Cargo</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>thu, May 22th 2024
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Qatar Airways Cargo, the world’s leading international air cargo carrier is based in Doha,
+               State of Qatar. It serves a global network of more than 70 freighter destinations and 170 passenger destinations utilising 
+               freighters and belly-hold passenger aircraft. The airline’s freighter fleet includes 28 Boeing 777 freighters and 230 belly-hold planes.
+                It also has an extensive road feeder service (RFS) network. The cargo airline is the launch customer for the innovative 
+                Boeing 777-8F featuring advanced technology,
+               and a 25% improvement in fuel efficiency and emissions, with the first delivery arriving in 2027.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>60 mins.</li>
+              <li class="tag__item play red">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play video</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /2nd card -->
+        <article class="postcard d-flex  light green"> <!-- 3rd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/h1-ffp-cards-qsuite-crew-nocards-ar.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title green"><a href="#">Qatar Airways Successfully Concludes its Six Month Expo 2023 Doha Journey</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>thu, May 22th 2024
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Qatar Airways, the Official Strategic Partner of Expo 2023 Doha, 
+              has closed an eventful six months at Expo 2023 Doha with resounding success.
+               This edition of the MENA region’s largest horticultural exhibition raised climate and desertification awareness through various exhibition stands, 
+              panel discussions and public activities.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>30 mins.</li>
+              <li class="tag__item play green">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play video</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /3rd card -->
+        <article class="postcard d-flex light yellow "> <!-- 4th card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/h2-qsuite-cabin.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title yellow"><a href="#"> Qatar Airways Privilege Club Launches New Card Linked Offers Elevating the Opportunities to Collect and Spend Avios</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>thu, May 22th 2024
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Qatar Airways Privilege Club announces the introduction of a new feature, 
+              Card Linked Offers, which will integrate Avios in members’ lifestyles. Visa or Mastercard credit cardholders – including cards registered in Apple Pay, 
+              Google Pay or Samsung Pay – can now be linked to their Privilege Club accounts. 
+              This enables members to collect and spend Avios on everyday purchases at a wide range of retail and lifestyle partners in Qatar.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>20 mins.</li>
+              <li class="tag__item play yellow">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play video</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /4th card -->
+      </div> <!-- /container -->
+    </section> <!-- /postcard section -->
+    <!-- join us -->
+    <h2 class="text-center text-light title" style="font-size: 30px;"> Let’s stay connected</h2>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(196, 195, 207);">
+          <div class="card-body text-secondary d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Subscribe Now
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/tweeeeeeet.jpg" type="image"
+              alt="icon">
+            <a href="#" target="_blank" class="card-link h4 text-secondary  ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+          <div class="card-body text-secondary d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Follow
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/waaaaaaaaaaaaaaaaaaaaaaaatsh.jpg" type="image"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-secondary ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body text-secondary d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Like the page
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/faaaaaaace.jpg" type="image"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-secondary ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body text-secondary d-flex flex-column text-center">
+            <h3 class="card-title mb-4">watch vedios
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/instaaaaaaaaaaaaa.jpg" type="image"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-secondary ">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /join us -->
+    <!-- footer -->
+    <footer class=" text-light pb-5 bg-secondary">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class=" border-top border-3 border-light my-3">
+            <h5><img src="images/logo1 (2).jpg" alt="good pic" class="logoicon rounded-circle">&nbsp; QATAR Airways</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <address>
+              <p>Qatar Airways Group
+                Corporate Communications Department
+                qrmedia@qatarairways.com.qa
+                +974 4022 22000</p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="images/logo2.jpg" alt="good pic" class="logoicon rounded-circle ">&nbsp; Group companies</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Hamad International</a></p>
+            <p><a href="#">Qatar Executive</a></p>
+            <p><a href="#">Qatar Aviation Services</a> </p>
+            <p><a href="#">Qatar Aircraft Catering Company</a> </p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="images/2.jpg" alt="good pic" class="logoicon rounded-circle">&nbsp; contact Us</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p>Media contacts            </p>
+            <p>Got a media inquiry? Or are you unable  </p>
+            <p>to find what you’re looking for?</p>
+            <p>Reach out to our media team and we’ll be in touch shortly.</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-top border-3 border-light my-3">
+      <span class="text-center d-block title" style="color: #4d0202;">Copyright &copy; QATAR Airways CAmpany All rights</span>
+      <hr class="border-top border-3 border-light my-3">
+      <!-- /footer -->
+      <!-- js -->
+    <!-- Latest compiled JavaScript -->
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        <script type-text="javascript">
+          function copyToClipboard(id) {
+                  var from = document.getElementById(id);
+                  var range = document.createRange();
+                  window.getSelection().removeAllRanges();
+                  range.selectNode(from);
+                  window.getSelection().addRange(range);
+                  document.execCommand('copy');
+                  window.getSelection().removeAllRanges();
+                  window.alert("تم نسخ النص.");
+           }
+          </script>
+          
+    </body>
+  </html>
+  
